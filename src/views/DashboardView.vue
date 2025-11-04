@@ -20,7 +20,7 @@
               Live Map Tracking
             </div>
             <div class="card-body p-0">
-              <div id="liveMap" style="height: 300px; border-radius: 0.5rem;"></div>
+              <div id="liveMap" style="height: 390px; border-radius: 0.5rem;"></div>
             </div>
             <div
               class="card-footer bg-white d-flex justify-content-center align-items-center flex-wrap small text-muted border-0"

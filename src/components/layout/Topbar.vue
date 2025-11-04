@@ -8,7 +8,7 @@
         </button>
         <div class="dropdown">
           <a class="dropdown-toggle text-success fw-semibold" href="#" data-bs-toggle="dropdown">
-            Ammar Hafiz
+            Admin
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="#">Profile</a></li>
