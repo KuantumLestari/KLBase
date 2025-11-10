@@ -13,7 +13,7 @@
     </div>
 </div>
     <!-- Stat cards -->
-    <div class="row text-center mb-2">
+    <div class="row text-center mb-3">
       <div class="col" v-for="card in statCards" :key="card.label">
         <div class="card shadow-sm border-0">
           <div class="card-body py-3">
