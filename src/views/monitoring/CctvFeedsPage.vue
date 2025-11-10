@@ -87,7 +87,6 @@ const liveFeeds = ref([
 </script>
 
 <style scoped>
-/* Add custom styles if needed, e.g., for video placeholders */
 .video-card {
   height: 200px; /* Adjust height as needed */
 }
@@ -117,7 +116,7 @@ const liveFeeds = ref([
 
 /* Make alert box stand out */
 .bg-danger {
-  background-color: #dc3545 !important;
+  background-color: #ff0019 !important;
 }
 
 .card-img-overlay {
