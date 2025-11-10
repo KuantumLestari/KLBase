@@ -8,7 +8,7 @@
     </div>
 
     <!-- Stat Cards -->
-    <div class="row text-center">
+    <div class="row text-center mb-3">
       <div class="col" v-for="card in statCards" :key="card.label">
         <div class="card shadow-sm border-0">
           <div class="card-body py-3">
@@ -25,19 +25,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Tabs -->
-    <ul class="nav nav-tabs mb-3">
-      <li class="nav-item" v-for="tab in tabs" :key="tab">
-        <button
-          class="nav-link"
-          :class="{ active: currentTab === tab }"
-          @click="currentTab = tab"
-        >
-          {{ tab }}
-        </button>
-      </li>
-    </ul>
 
     <!-- Access Table -->
     <table class="table align-middle table-bordered shadow-sm">
