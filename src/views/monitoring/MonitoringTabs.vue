@@ -48,11 +48,12 @@ import AdminLayout from "../../layouts/AdminLayout.vue";
 
 // Import child components
 import GpsTrackingPage from "./GpsTrackingPage.vue";
-//import CctvFeedsPage from "./CctvFeedsPage.vue";
-//import ZoneActivityPage from "./ZoneActivityPage.vue";
+import CctvFeedsPage from "./CctvFeedsPage.vue";
+import ZoneActivityPage from "./ZoneActivityPage.vue";
 
 // Reactive State
 const currentTab = ref("gps");
+
 
 // Tabs Configuration
 const tabs = [
@@ -64,8 +65,8 @@ const tabs = [
 // Dynamic Component Mapping
 const componentMap: Record<string, any> = {
   gps: GpsTrackingPage,
-  //cctv: CctvFeedsPage,
-  //activity: ZoneActivityPage,
+  cctv: CctvFeedsPage,
+  activity: ZoneActivityPage,
 };
 
 // Computed property for dynamic component

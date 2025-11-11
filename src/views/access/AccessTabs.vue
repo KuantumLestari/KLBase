@@ -18,17 +18,18 @@
       </ul>
 
       <div class="tab-content mt-4">
-        <div v-if="currentTab === 'logs'">🧾 Access Logs Page (To be developed)</div>
-        <div v-if="currentTab === 'records'">🚪 Entry/Exit Records Page (To be developed)</div>
-        <div v-if="currentTab === 'qr'">🔐 QR Management Page (To be developed)</div>
+       <component :is="currentTabComponent"></component>
+        <div v-if="currentTab === 'qr'"> QR Management Page (To be developed)</div>
       </div>
     </div>
   </AdminLayout>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import AdminLayout from "../../layouts/AdminLayout.vue";
+import AccessLogsView from "./AccessLogsView.vue";
+import AccessRecordsView from "./AccessRecordsView.vue";
 
 const tabs = [
   { name: "logs", label: "Access Logs", icon: "bi bi-journal-text" },
@@ -37,4 +38,12 @@ const tabs = [
 ];
 
 const currentTab = ref("logs");
+const currentTabComponent = computed(() => {
+  const component: Record<string, any> = {
+    logs:AccessLogsView,
+    records: AccessRecordsView,
+     qr: { template: "<div>🔐 QR Management Page (To be developed)</div>" },
+  };
+  return component[currentTab.value];
+});
 </script>
